@@ -1,0 +1,13 @@
+﻿using Auth.Grpc;
+using Blocks.Domain.Entities;
+using Review.Domain.Articles;
+using Review.Domain.Shared;
+
+namespace Review.Domain.Reviewers;
+
+public partial class Reviewer : Person
+{
+    private HashSet<ReviewerSpecialization> _specializations = new(); 
+    public IReadOnlyCollection<ReviewerSpecialization> Specializations => _specializations.ToList().AsReadOnly();
+    public override string TypeDiscriminator => nameof(Reviewer);
+}

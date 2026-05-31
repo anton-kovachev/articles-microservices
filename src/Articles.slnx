@@ -1,0 +1,58 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="../BuildingBlocks/Blocks.AspNetCore/Blocks.AspNetCore.csproj" Id="49c4bd6c-4501-422d-adcd-fc1dac6d8b9d" />
+    <Project Path="../src'/BuildingBlocks/Blocks.MediatR/Blocks.MediatR.csproj" Id="ef18c2fe-b4bb-48bf-8c84-49c3a9f3e5c1" />
+    <Project Path="Articles.Security/Articles.Security.csproj" Id="c1da3a9e-31f2-43d0-a18c-5b661245f23c" />
+    <Project Path="Blocks.Core/Blocks.Core.csproj" Id="1c731043-a27c-4de4-b632-b255c028cf23" />
+    <Project Path="BuildingBlocks/Articles.Abstractions/Articles.Abstractions.csproj" Id="eb6c2ded-bbba-4781-8f90-00a4e3eaea9b" />
+    <Project Path="BuildingBlocks/Articles.Grpc.Contracts/Articles.Grpc.Contracts.csproj" Id="e907cffd-480e-467c-b141-08b6f8256822" />
+    <Project Path="BuildingBlocks/Articles.IntegrationEvents.Contracts/Articles.IntegrationEvents.Contracts.csproj" Id="7929ccea-3cc8-4ab2-8095-d57940ffe1aa" />
+    <Project Path="BuildingBlocks/Blocks.EntityFramework/Blocks.EntityFrameworkCore.csproj" Id="69567d82-a2b8-47ea-a625-095b04efd856" />
+    <Project Path="BuildingBlocks/Blocks.Exceptions/Blocks.Exceptions.csproj" Id="53f168ca-c29b-40da-b7b2-ed797a5cf286" />
+    <Project Path="BuildingBlocks/Blocks.FastEndpoints/Blocks.FastEndpoints.csproj" Id="7a7e041b-764a-4e47-abf5-9eeb03767643" />
+    <Project Path="BuildingBlocks/Blocks.Messaging/Blocks.Messaging.csproj" Id="64c03614-7a26-4547-a074-739ca8281fda" />
+    <Project Path="BuildingBlocks/Blocks.Redis/Blocks.Redis.csproj" Id="a096f7bf-131f-4e5a-bdbd-8189c3f05e0d" />
+    <Project Path="Domain/Blocks.Domain.csproj" Id="ebe2f2aa-7a9f-4540-9c4f-24bc737ca7a8" />
+  </Folder>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/EmailService/">
+    <Project Path="../Modules/EmailService/EmailService.Smtp/EmailService.Smtp.csproj" Id="f5560253-667e-4794-bc06-a86d188bfa0d" />
+    <Project Path="Modules/EmailService/EmailService.Contract/EmailService.Contract.csproj" Id="0be59388-efc7-4edb-b8a9-1c61c7cce698" />
+  </Folder>
+  <Folder Name="/Modules/FileStorage/">
+    <Project Path="Modules/FileStorage/FileStorage.Contract/FileStorage.Contract.csproj" Id="41089609-df0d-4dcc-8682-1c9001b68191" />
+    <Project Path="Modules/FileStorage/FileStorage.MongoGridFS/FileStorage.MongoGridFS.csproj" Id="1168c7fc-6159-4e3a-8ee7-b2002c7074f2" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/ArticleHub/">
+    <Project Path="Services/ArticleHub/ArticleHub.API/ArticleHub.API.csproj" Id="a5eb3443-c79b-4017-a2d6-3fe2dff19800" />
+    <Project Path="Services/ArticleHub/ArticleHub.Domain/ArticleHub.Domain.csproj" Id="7bfd7e2b-52c9-48d0-8efc-bef6cdc1525a" />
+    <Project Path="Services/ArticleHub/ArticleHub.Persistence/ArticleHub.Persistence.csproj" Id="921a8b8b-3fcf-4b3f-aee8-a20ed6e47523" />
+  </Folder>
+  <Folder Name="/Services/Auth/">
+    <Project Path="services/Auth/Auth.API/Auth.API.csproj" Id="ccaec9dc-9adb-4294-a46d-ae973d60b37f" />
+    <Project Path="services/Auth/Auth.Application/Auth.Application.csproj" Id="901a1fb4-b173-4c81-b962-ccbe5df0211a" />
+    <Project Path="Services/Auth/Auth.Domain/Auth.Domain.csproj" Id="69bc987b-ddf7-4483-9f30-d8bbf12dc77a" />
+    <Project Path="Services/Auth/Auth.Persistence/Auth.Persistence.csproj" Id="60772c5d-23bb-4585-9e6b-ee8e3e09b724" />
+  </Folder>
+  <Folder Name="/Services/Journals/">
+    <Project Path="Services/Journals/Journals.Api/Journals.Api.csproj" Id="93bfb899-f94f-4e2b-81a4-1066702dc1ef" />
+    <Project Path="Services/Journals/Journals.Domain/Journals.Domain.csproj" Id="c82a2524-1b95-43e8-b88e-d5423c737a6a" />
+    <Project Path="Services/Journals/Journals.Persistence/Journals.Persistence.csproj" Id="76f428ca-eb42-42e4-8471-3367c4d65a85" />
+  </Folder>
+  <Folder Name="/Services/Review/">
+    <Project Path="Services/Review/Review.API/Review.API.csproj" Id="b6daed1f-a39d-4d18-859f-c3ecbeefab3f" />
+    <Project Path="Services/Review/Review.Application/Review.Application.csproj" Id="7639ed1e-fc21-4f9d-9d31-aaa886b55301" />
+    <Project Path="Services/Review/Review.Domain/Review.Domain.csproj" Id="789ecb24-eb1c-4c9c-abb8-44b3c7332ce7" />
+    <Project Path="Services/Review/Review.Persistence/Review.Persistence.csproj" Id="8b3e04f4-8e45-4a7f-8e52-1400e0e000bb" />
+  </Folder>
+  <Folder Name="/Services/Submission/">
+    <Project Path="Services/Submission/Submission.API/Submission.API.csproj" Id="257007b1-2d9d-45af-81c6-9c6bf5a4b667" />
+    <Project Path="services/submission/Submission.Application/Submission.Application.csproj" Id="09fffa4b-21b1-4497-935a-ed75907b2316" />
+    <Project Path="services/submission/Submission.Domain/Submission.Domain.csproj" Id="2c36877b-e631-467e-b1bd-38b2f03e3baa" />
+    <Project Path="services/submission/Submission.Persistence/Submission.Persistence.csproj" Id="ab7fbb4e-4c44-46ff-a9c9-cb9b5272cfdc" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

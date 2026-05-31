@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Blocks.Core\Blocks.Core.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Articles.Abstractions\Articles.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Articles.Grpc.Contracts\Articles.Grpc.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Articles.IntegrationEvents.Contracts\Articles.IntegrationEvents.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\Domain\Blocks.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Modules\FileStorage\FileStorage.Contract\FileStorage.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

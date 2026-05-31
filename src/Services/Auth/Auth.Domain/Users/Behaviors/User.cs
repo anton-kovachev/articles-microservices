@@ -1,0 +1,31 @@
+﻿using Auth.Domain.Persons.ValueObjects;
+using Blocks.Core.Extensions;
+using Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+
+namespace Auth.Domain.Users;
+
+public partial class User
+{
+    public static User Create(IUserCreationInfo userInfo)
+    {
+        if (userInfo.UserRoles.IsNullOrEmpty())
+            throw new Exception();
+
+        var user = new User
+        {
+            UserName = userInfo.Email,
+            Email = userInfo.Email,
+            PhoneNumber = userInfo.PhoneNumber,
+            _userRoles = userInfo.UserRoles.Select(r => UserRole.Create(r)).ToList()
+        };
+    
+        //TODO: Add User Created domain event
+        return user;
+    }
+
+    public void AddRefreshToken(RefreshToken refreshToken)
+    {
+        _refreshTokens.Add(refreshToken);
+    }
+}

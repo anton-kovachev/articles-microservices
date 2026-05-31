@@ -1,0 +1,25 @@
+﻿using Carter;
+using MediatR;
+using Review.Application.Features.Invitations.AcceptInvitation;
+
+namespace Review.API.Endpoints.Invitations
+{
+    public class AcceptInvitationEndpoint : ICarterModule
+    {
+        public void AddRoutes(IEndpointRouteBuilder app)
+        {
+            app.MapPost("api/articles/{articleId:int}/invitations/{token}:accept", async (int articleId, string token, AcceptInvitationCommand command, ISender sender) =>
+            {
+                var response = await sender.Send(command with { ArticleId = articleId, Token = token });
+                return Results.Ok(response);
+            })
+            .AllowAnonymous()
+            .WithName("Accept Invitation")
+            .WithTags("Invitations")
+            .Produces<AcceptInvitationResponse>(StatusCodes.Status200OK)
+            .ProducesProblem(StatusCodes.Status400BadRequest)
+            .ProducesProblem(StatusCodes.Status404NotFound)
+            .ProducesProblem(StatusCodes.Status403Forbidden);
+        }
+    }
+}
