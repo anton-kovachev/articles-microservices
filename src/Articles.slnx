@@ -16,8 +16,8 @@
   </Folder>
   <Folder Name="/Modules/" />
   <Folder Name="/Modules/EmailService/">
-    <Project Path="../Modules/EmailService/EmailService.Smtp/EmailService.Smtp.csproj" Id="f5560253-667e-4794-bc06-a86d188bfa0d" />
     <Project Path="Modules/EmailService/EmailService.Contract/EmailService.Contract.csproj" Id="0be59388-efc7-4edb-b8a9-1c61c7cce698" />
+    <Project Path="Modules/EmailService/EmailService.Smtp/EmailService.Smtp.csproj" />
   </Folder>
   <Folder Name="/Modules/FileStorage/">
     <Project Path="Modules/FileStorage/FileStorage.Contract/FileStorage.Contract.csproj" Id="41089609-df0d-4dcc-8682-1c9001b68191" />

@@ -15,10 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Modules\EmailService\EmailService.Smtp\EmailService.Smtp.csproj" />
     <ProjectReference Include="..\..\..\Articles.Security\Articles.Security.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\Articles.Grpc.Contracts\Articles.Grpc.Contracts.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\Blocks.AspNetCore\Blocks.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\Modules\EmailService\EmailService.Smtp\EmailService.Smtp.csproj" />
     <ProjectReference Include="..\..\..\Modules\FileStorage\FileStorage.MongoGridFS\FileStorage.MongoGridFS.csproj" />
     <ProjectReference Include="..\Review.Application\Review.Application.csproj" />
   </ItemGroup>
