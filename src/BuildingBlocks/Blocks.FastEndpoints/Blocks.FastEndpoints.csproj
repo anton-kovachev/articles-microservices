@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Blocks.Core\Blocks.Core.csproj" />
     <ProjectReference Include="..\..\Domain\Blocks.Domain.csproj" />
+    <ProjectReference Include="..\Blocks.Core\Blocks.Core.csproj" />
   </ItemGroup>
 
 </Project>

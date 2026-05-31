@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlocks\Blocks.Exceptions\Blocks.Exceptions.csproj" />
+    <ProjectReference Include="..\Blocks.Exceptions\Blocks.Exceptions.csproj" />
   </ItemGroup>
 
 </Project>

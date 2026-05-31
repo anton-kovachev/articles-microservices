@@ -1,7 +1,4 @@
-﻿using Auth.Domain.Persons.ValueObjects;
-using Blocks.Core.Extensions;
-using Domain.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using Blocks.Core.Extensions;
 
 namespace Auth.Domain.Users;
 

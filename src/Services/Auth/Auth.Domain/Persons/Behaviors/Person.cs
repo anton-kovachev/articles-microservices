@@ -1,7 +1,6 @@
 ﻿using Auth.Domain.Persons.ValueObjects;
 using Auth.Domain.Users;
 using Blocks.Core.Extensions;
-using Domain.Entities;
 
 namespace Auth.Domain.Persons;
 

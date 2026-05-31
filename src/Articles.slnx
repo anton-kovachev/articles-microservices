@@ -1,17 +1,17 @@
 <Solution>
   <Folder Name="/BuildingBlocks/">
-    <Project Path="../BuildingBlocks/Blocks.AspNetCore/Blocks.AspNetCore.csproj" Id="49c4bd6c-4501-422d-adcd-fc1dac6d8b9d" />
-    <Project Path="../src'/BuildingBlocks/Blocks.MediatR/Blocks.MediatR.csproj" Id="ef18c2fe-b4bb-48bf-8c84-49c3a9f3e5c1" />
     <Project Path="Articles.Security/Articles.Security.csproj" Id="c1da3a9e-31f2-43d0-a18c-5b661245f23c" />
-    <Project Path="Blocks.Core/Blocks.Core.csproj" Id="1c731043-a27c-4de4-b632-b255c028cf23" />
     <Project Path="BuildingBlocks/Articles.Abstractions/Articles.Abstractions.csproj" Id="eb6c2ded-bbba-4781-8f90-00a4e3eaea9b" />
     <Project Path="BuildingBlocks/Articles.Grpc.Contracts/Articles.Grpc.Contracts.csproj" Id="e907cffd-480e-467c-b141-08b6f8256822" />
     <Project Path="BuildingBlocks/Articles.IntegrationEvents.Contracts/Articles.IntegrationEvents.Contracts.csproj" Id="7929ccea-3cc8-4ab2-8095-d57940ffe1aa" />
+    <Project Path="BuildingBlocks/Blocks.AspNetCore/Blocks.AspNetCore.csproj" />
+    <Project Path="BuildingBlocks/Blocks.Core/Blocks.Core.csproj" />
     <Project Path="BuildingBlocks/Blocks.EntityFramework/Blocks.EntityFrameworkCore.csproj" Id="69567d82-a2b8-47ea-a625-095b04efd856" />
     <Project Path="BuildingBlocks/Blocks.Exceptions/Blocks.Exceptions.csproj" Id="53f168ca-c29b-40da-b7b2-ed797a5cf286" />
     <Project Path="BuildingBlocks/Blocks.FastEndpoints/Blocks.FastEndpoints.csproj" Id="7a7e041b-764a-4e47-abf5-9eeb03767643" />
     <Project Path="BuildingBlocks/Blocks.Messaging/Blocks.Messaging.csproj" Id="64c03614-7a26-4547-a074-739ca8281fda" />
     <Project Path="BuildingBlocks/Blocks.Redis/Blocks.Redis.csproj" Id="a096f7bf-131f-4e5a-bdbd-8189c3f05e0d" />
+    <Project Path="BuildingBlocks/MediatR/Blocks.MediatR.csproj" Id="687b2be2-5c7a-41c7-9e4c-511449d60091" />
     <Project Path="Domain/Blocks.Domain.csproj" Id="ebe2f2aa-7a9f-4540-9c4f-24bc737ca7a8" />
   </Folder>
   <Folder Name="/Modules/" />
