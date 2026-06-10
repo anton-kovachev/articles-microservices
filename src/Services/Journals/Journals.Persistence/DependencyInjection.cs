@@ -1,9 +1,9 @@
 ﻿using Blocks.Core;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Redis.OM;
 using StackExchange.Redis;
 using Blocks.Redis;
+using Microsoft.Extensions.Configuration;
 
 
 namespace Journals.Persistence;
@@ -12,7 +12,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("Database");
+        var connectionString = configuration.GetConnectionString("Redis");
         services.AddSingleton(new RedisConnectionProvider(connectionString!));
         var redis = ConnectionMultiplexer.Connect(connectionString!.Replace("redis://", ""));
         services.AddSingleton<IConnectionMultiplexer>(redis);

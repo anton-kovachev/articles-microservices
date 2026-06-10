@@ -17,7 +17,7 @@ public class EmailAddress : StringValueObject
     public static EmailAddress Create(string value)
     {
         Guard.ThrowIfNullOrWhiteSpace(value);
-        Guard.ThrowIfFalse(!IsValidEmail(value), "Invalid email format.");
+        Guard.ThrowIfFalse(IsValidEmail(value), "Invalid email format.");
 
         return new EmailAddress(value);
     }

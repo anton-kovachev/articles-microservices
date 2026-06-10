@@ -28,8 +28,6 @@ namespace Review.API
                 .AddSwaggerGen()
                 .AddJwtAuthentication(configuration)
                 .AddAuthorization()
-                .AddAndValiadateOptions<ReviewFileStorageOptions>(configuration)
-                .AddAndValiadateOptions<SubmissionFileStorageOptions>(configuration)
                 .AddFileServiceFactory();
 
             services.AddScoped<IClaimsProvider, HttpContextProvider>()

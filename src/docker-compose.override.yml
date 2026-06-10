@@ -4,7 +4,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
-      - ConnectionStrings__Database=Server=sqlserver;Database=SubmissionDb;User Id=sa;Password=Password123!;Encrypt=False;TrustServerCertificate=True
+      - ConnectionStrings__Database=Server=sqlserver;Database=AuthDb;User Id=sa;Password=Password123!;Encrypt=False;TrustServerCertificate=True
     ports:
       - "4401:8080"
       - "4451:8081"
@@ -17,7 +17,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
-      - ConnectionStrings__Redis=redis://journals-redisdb:6379
+      - ConnectionStrings__Redis=redis://journals-redisdb
     ports:
       - "4402:8080"
       - "4452:8081"
@@ -43,7 +43,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
-      - ConnectionStrings__Database=Server=sqlserver;Database=SubmissionDb;Username=sa;Password=Password123!
+      - ConnectionStrings__Database=Server=sqlserver;Database=SubmissionDb;User Id=sa;Password=Password123!;Encrypt=False;TrustServerCertificate=True
     ports:
       - "4404:8080"
       - "4454:8081"
@@ -56,7 +56,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
-      - ConnectionStrings__Database=Server=sqlserver;Database=ReviewDb;Username=sa;Password=Password123!
+      - ConnectionStrings__Database=Server=sqlserver;Database=ReviewDb;User id=sa;Password=Password123!;Encrypt=False;TrustServerCertificate=True
     ports:
       - "4405:8080"
       - "4455:8081"
