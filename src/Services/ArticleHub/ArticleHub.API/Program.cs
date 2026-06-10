@@ -5,7 +5,7 @@ using Carter;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureOptions(builder.Configuration);
+builder.Services.ConfigureApiOptions(builder.Configuration);
 
 builder.Services
     .AddApiAndApplicationServices(builder.Configuration)

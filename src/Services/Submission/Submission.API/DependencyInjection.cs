@@ -36,9 +36,9 @@ namespace Submission.API
                 .AddEndpointsApiExplorer()    //Minimal API docs (Swagger)
                 .AddSwaggerGen();             //Swagger setup
 
-            services.AddScoped<IClaimsProvider, HttpContextProvider>()
-                .AddScoped<IHttpContextAccessor, HttpContextAccessor>()
-                .AddScoped<HttpContextAccessor>();
+            services
+                .AddHttpContextAccessor()
+                .AddScoped<IClaimsProvider, HttpContextProvider>();
 
             services.AddMongoFileStorageAsSingleton(configuration);
 
